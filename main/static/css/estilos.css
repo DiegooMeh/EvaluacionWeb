@@ -1,0 +1,30 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+    font-size: 66px;
+    font-weight: 600px;
+    line-height: 80px;
+}
+blanoc{
+    filter: brightness(2.0);
+}
+p{
+    font-family: 'Source Sans Pro';
+    font-size: 28px;
+}
+#foto_principal{
+    background-image: url('../img/casa_index.jpg');
+    background-size: cover;
+    color: white;
+    padding-top: 90px;
+    min-height: 700px;
+    position: absolute;
+    width: 100%;
+}
+.content-center{
+    max-width: 800p;
+    margin: 0 auto;
+    text-align: center;
+}
+
