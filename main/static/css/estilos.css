@@ -99,7 +99,12 @@ footer {
     text-transform: uppercase;
 }
 
-
+#fotos_home{
+    padding: 50px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
