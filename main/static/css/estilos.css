@@ -107,3 +107,57 @@ ion-icon {
     font-size: 50px;
     color: white;
   }
+
+
+  #large{
+    width: 200%;
+}
+
+/*ESTILOS CONTACTO */
+#BackgroundContacto{
+    
+background-image: url('../img/');
+width: 100%;
+padding: 100%;
+background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.cuadrado{
+width: 30%;   
+padding:5px;
+margin-right: 0%;
+margin: auto;
+background-color: rgba(255, 255, 255, 0.5) ;
+color: black;
+text-align: center;
+margin-top: 0vh ;
+margin-right: 0vh;
+margin-left: 0vh;
+margin-bottom: 0vh;
+
+}
+
+.cuadradoMap{
+ width: 30%;   
+padding:5px;
+margin-right: 0vh;
+margin: auto;
+border-right: 80vh;
+border-left: 40vh;
+background-color: transparent ;
+vertical-align: middle;
+min-height: 100%;
+color: black;
+text-align: center;
+margin-top: 30vh ;
+margin-left: 0vh;
+margin-bottom: 14vh;
+}
+
+#Contacto{
+display: flex;
+justify-content: space-evenly;
+
+}
+/*FIN ESTILOS CONTACTO */
