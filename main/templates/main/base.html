@@ -11,7 +11,7 @@
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-lg">
       <a href="home.html"><img src="{%static 'bootstrap-icons-1.1.0/house.svg'%}" width="30px" height="30px" ></a>
       <a class="navbar-brand" href="home.html" >Belive in our houses</a>
@@ -51,34 +51,26 @@
 {% block content %}
 
 {% endblock %}
-<footer>
 
-  <div class="container">
 
-    <div class="row">
-      
-
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-          <a class="fb-ic">
-            <ion-icon name="logo-facebook" size=""></ion-icon>
-          </a>
-          <a class="tw-ic">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a class="ins-ic">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a class="pin-ic">
-            <ion-icon name="logo-pinterest"></ion-icon>
-          </a>
-        </div>
-      </div>
-      </div>
+<div class="footer-main-div">
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="#" target="blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#" target="blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="#" target="blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    </ul>
   </div>
 
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="footer-menu-one">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">aboaut</a></li>
+      <li><a href="#">bla</a></li>
+      <li><a href="#">bla</a></li>
+    </ul>
+
   </div>
-</footer>
+</div>
+
 </html>

@@ -18,9 +18,12 @@ p{
     background-size: cover;
     color: white;
     padding-top: 90px;
-    min-height: 700px;
-    position: absolute;
+    min-height: 900px;
     width: 100%;
+}
+
+#info{
+    padding: 100px;
 }
 .content-center{
     max-width: 800p;
@@ -36,7 +39,71 @@ footer {
     height: 40px;
     color: white;
   }
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    bottom: 0;
+    background: #272727;
+    padding: 20px 0px;
+}
+
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 50px;
+    background: transparent;
+}
+
+.footer-social-iconsul li a{
+    color: yellow;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-iconsul li a i{
+    line-height: 50px;
+}
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu-one ul li a{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
 
 ion-icon {
-    font-size: 64px;
+    font-size: 50px;
+    color: white;
   }
