@@ -1,8 +1,11 @@
 from django.shortcuts import render
 
 # Create your views here.
-def main(response):
-    return render(response,'home.html',{})
+def main(request):
+    return render(request,'home.html',{})
 
-def galeria(response):
-    return render(response,'galeria.html',{})
+def gallery(request):
+    return render(request,'gallery.html',{})
+
+def about(request):
+    return render(request,'about.html',{})
