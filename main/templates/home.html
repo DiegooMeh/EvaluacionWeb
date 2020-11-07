@@ -1,12 +1,12 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block content%}
 <section id="foto_principal">
   <div class="container">
     <div class="content-center">
       <h1 class="blanco">Bienvenido </h1><br><br><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto exercitationem fuga at illum nesciunt laboriosam earum commodi quibusdam sed quia, qui nobis modi illo inventore nam minus. Dolore, obcaecati.</p>
-      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto exercitationem fuga at illum nesciunt laboriosam earum commodi quibusdam sed quia, qui nobis modi illo inventore nam minus. Dolore, obcaecati.</p> 
     </div>
   </div>
 </section>
@@ -17,15 +17,33 @@
       <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod totam nulla, eveniet, earum error quaerat sapiente ad, cumque iure </h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus libero quisquam est minima doloremque pariatur eveniet, iure error veritatis consectetur unde neque eaque! Id tenetur in itaque, blanditiis facere illo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam provident velit illum qui reprehenderit quod nemo nobis iste quae dolorum earum numquam sit voluptatum quis, libero itaque eius, molestias nulla?</p>
     </content-center>
-
-
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
   </div>
 </section> 
-{% endblock content%}
+<section id="fotos_home">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'img/casa.jpeg'%}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'img/casa.jpeg'%}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'img/casa.jpeg'%}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'img/casa.jpeg'%}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
