@@ -1,175 +1,171 @@
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 h1{
-    font-size: 66px;
-    font-weight: 600px;
-    line-height: 80px;
-}
-
-
-
-blanoc{
-    filter: brightness(2.0);
+  font-size: 66px;
+  font-weight: 600px;
+  line-height: 80px;
 }
 p{
-    font-family: 'Source Sans Pro';
-    font-size: 28px;
+  font-family: 'Source Sans Pro';
+  font-size: 28px;
 }
 #foto_principal{
-    background-image: url('../img/casa_index.jpg');
-    background-size: cover;
-    color: white;
-    padding-top: 90px;
-    min-height: 900px;
-    width: 100%;
+  background-image: url('../img/casa_index.jpg');
+  background-size: cover;
+  color: white;
+  padding-top: 90px;
+  min-height: 900px;
+  width: 100%;
 }
 
+
 #info{
-    padding: 100px;
+  padding: 100px;
 }
 .content-center{
-    max-width: 800p;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 800p;
+  margin: 0 auto;
+  text-align: center;
+}
+.content-center-two{
+  max-width: 900p;
+  margin: 0 auto;
+  text-align: center;
+}
+fondo{
+  width: 100%;
+  background-color: darkcyan;
 }
 
 footer {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: white;
-  }
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
 .footer-main-div{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    bottom: 0;
-    background: #272727;
-    padding: 20px 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  bottom: 0;
+  background: #272727;
+  padding: 20px 0px;
 }
 
 .footer-social-icons{
-    width: 100%;
-    height: auto;
-    margin: auto;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .footer-social-icons ul{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 .footer-social-icons ul li{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0px 50px;
-    background: transparent;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 50px;
+  background: transparent;
 }
 
 .footer-social-iconsul li a{
-    color: yellow;
-    font-size: 25px;
-    display: block;
+  color: yellow;
+  font-size: 25px;
+  display: block;
 }
 .footer-social-iconsul li a i{
-    line-height: 50px;
+  line-height: 50px;
 }
 .footer-menu-one{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 20px;
+  width: 100%;
+  margin: 50px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
 
 }
 .footer-menu-one ul{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 .footer-menu-one ul li{
-    display: inline-block;
-    margin: 0px 15px;
+  display: inline-block;
+  margin: 0px 15px;
 }
 .footer-menu-one ul li a{
-    font-family: Arial;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
 }
 
 #fotos_home{
-    padding: 50px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 
 ion-icon {
-    font-size: 50px;
-    color: white;
-  }
-
-
-
-
-
-
-
-
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 33.3%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    filter: grayscale(1) brightness(0.5);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s linear;
-  }
-  .column img:hover {
-    filter: grayscale(0);
-  }
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-    .column img {
-      filter: grayscale(0) brightness(1);
-    }
-  }
-  
-  #large{
-    width: 200%;
+  font-size: 50px;
+  color: white;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+#large{
+  width: 200%;
+
 
 /*ESTILOS CONTACTO */
 #BackgroundContacto{
