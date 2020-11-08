@@ -215,3 +215,18 @@ justify-content: space-evenly;
 
 }
 /*FIN ESTILOS CONTACTO */
+
+
+.CuadradoAbout{
+  width: 70%;   
+padding:5px;
+margin-top: 30px;
+margin: 10px 10px;
+margin: auto;
+background-color:rgba(239, 239, 239 , 0.6) ;
+border-color: black;
+margin-bottom: 40px;
+color: black;
+text-align: center;
+
+}
