@@ -156,6 +156,17 @@ ion-icon {
   .column img {
     filter: grayscale(0) brightness(1);
   }
+ 
+}
+@media screen and (max-width: 900px){
+  #Contacto{
+    flex-direction: column;
+    padding: 0%;
+    align-items: center;
+  }
+  .cuadrado{
+    width: 70%;
+    }
 }
 
 #large{
@@ -164,40 +175,25 @@ ion-icon {
 }
 /*ESTILOS CONTACTO */
 .cuadrado{
-width: 30%;   
-padding:5px;
-margin-right: 0%;
-margin: auto;
 background-color: rgba(255, 255, 255, 0.5) ;
 color: black;
 text-align: center;
-margin-top: 0vh ;
-margin-right: 0vh;
-margin-left: 0vh;
-margin-bottom: 0vh;
-
+width: 50%;
 }
 
 .cuadradoMap{
- width: 30%;   
-padding:5px;
-margin-right: 0vh;
-margin: auto;
-border-right: 80vh;
-border-left: 40vh;
 background-color: transparent ;
-vertical-align: middle;
-min-height: 100%;
 color: black;
 text-align: center;
-margin-top: 30vh ;
-margin-left: 0vh;
-margin-bottom: 14vh;
+
 }
 
 #Contacto{
 display: flex;
-justify-content: space-evenly;
+width: 70%;
+justify-content: space-around;
+padding: 20px;
+
 
 }
 /*FIN ESTILOS CONTACTO */
@@ -210,4 +206,14 @@ padding: 100px;
 border-color: black;
 color: black;
 text-align: center;
+}
+
+.banner-contact{
+  background-image: url('../img/callcenter.jpg');
+  background-size: cover;
+  color: white;
+  height: 400px;
+  padding: 50px;
+  width: 100%;
+  font-family: 'Source Sans Pro';
 }
