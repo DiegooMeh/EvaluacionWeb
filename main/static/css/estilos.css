@@ -20,7 +20,7 @@ p{
   font-family: 'Source Sans Pro';
 }
 .foto_about{
-  background-image: url('../img/ConstruccionCascoAmarillo.PNG');
+  background-image: url('../img/casco.jpg');
   background-size: cover;
   color: white;
   padding-top: 100px;
@@ -167,6 +167,13 @@ ion-icon {
   .cuadrado{
     width: 70%;
     }
+  #info{
+    padding: 100px 4px;
+  }
+
+  .footer-social-icons ul li{
+    margin: 0px 30px;
+  }
 }
 
 #large{
