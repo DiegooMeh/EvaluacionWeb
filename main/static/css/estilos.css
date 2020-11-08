@@ -166,17 +166,8 @@ ion-icon {
 #large{
   width: 200%;
 
-
-/*ESTILOS CONTACTO */
-#BackgroundContacto{
-    
-background-image: url('../img/');
-width: 100%;
-padding: 100%;
-background-color: rgba(255, 255, 255, 0.2);
-
 }
-
+/*ESTILOS CONTACTO */
 .cuadrado{
 width: 30%;   
 padding:5px;
