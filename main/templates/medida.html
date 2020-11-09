@@ -1,58 +1,65 @@
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block content%}
-<section class="banner-contact">
+<section class="banner-medidas">
   <div class="container">
     <div class="content-center">
-      <h1 style="font-size: 50px;font-weight: bold; margin-top: 220px;">Contactanos</h1>
+      <h1 style="font-size: 50px;font-weight: bold; margin-top: 220px;">Modelos a medida</h1>
+    </div>
+  </div>
+</section>
+<section id="info">
+  <div class="container">
+    <div class="content-center">
+      <h1>Crea la casa de tus suños</h1>
+      <p>En este apartado pondras las condiciones para la realizacion de tu casa, decide cuantas piezas y baños deseas tener y te mostraremos el precio.</p>
     </div>
   </div>
 </section>
 
 <section id="Contacto" class="content-center">
-  <div class="cuadrado">
-    <h4>Formulario</h4>
+  <div class="container-medidas" style="border: 1px; border-color: black;">
+    <h4>Completar</h4>
     <hr>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Correo Electronico</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
-          placeholder="Ejemplo@Correo.com" style="text-align: center;">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Numero de habitaciones
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">1</a>
+        <a class="dropdown-item" href="#">2</a>
+        <a class="dropdown-item" href="#">3</a>
+        <a class="dropdown-item" href="#">4</a>
       </div>
-
-      <div class="form-group">
-        <label for="exampleInputText">Ingresar Nombre </label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Juan"
-          style="text-align: center;">
+    </div>
+    <div class="dropdown" style="margin-top: 100px;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:  212px;">
+        Numero de baños
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">1</a>
+        <a class="dropdown-item" href="#">2</a>
       </div>
-
-      <div class="form-group">
-        <label for="exampleInputText">Ingresar Apellidos </label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
-          placeholder="Perez Lopez" style="text-align: center;">
-      </div>
-
-      <div class="form-group">
-        <label for="exampleInputText">Ingresar Numero de Contacto </label>
-        <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp " required
-          placeholder="9 8744 3453" style="text-align: center;" maxlength="9">
-      </div>
-      <div id="botoncito">
-        <button type="submit" class="btn btn-primary">Enviar Formulario</button>
-      </div>
-
-    </form>
+    </div>
+    <div id="botoncito">
+      <button type="submit" class="btn btn-primary" style="margin-top: 100px;">Confirmar</button>
+    </div>
   </div>
-
-
   <div class="cuadradoMap">
-    <h4>¿Donde nos ubicamos?</h4>
+    <h4>Resultado</h4>
     <hr>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4170791383535!2d-70.70033103255383!3d-33.51654019244764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662db4256a97df3%3A0xab7b4e8c1627bd02!2sPH613-Avenida%20Cerrillos%20%2F%20Esq.%20Av.%20Frei%20Montalva!5e0!3m2!1ses-419!2scl!4v1600899705529!5m2!1ses-419!2scl"
-      width="auto" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0">
-    </iframe>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock content%}

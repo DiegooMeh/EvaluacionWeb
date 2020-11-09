@@ -156,7 +156,6 @@ ion-icon {
   .column img {
     filter: grayscale(0) brightness(1);
   }
- 
 }
 @media screen and (max-width: 900px){
   #Contacto{
@@ -192,7 +191,6 @@ width: 50%;
 background-color: transparent ;
 color: black;
 text-align: center;
-
 }
 
 #Contacto{
@@ -223,4 +221,30 @@ text-align: center;
   padding: 50px;
   width: 100%;
   font-family: 'Source Sans Pro';
+}
+
+.banner-medidas{
+  background-image: url('../img/plano2.jpg');
+  background-size: cover;
+  color: white;
+  height: 400px;
+  padding: 50px;
+  width: 100%;
+  font-family: 'Source Sans Pro';
+}
+
+.banner-metraje{
+  background-image: url('../img/plano3.jpg');
+  background-size: cover;
+  color: white;
+  height: 400px;
+  padding: 50px;
+  width: 100%;
+  font-family: 'Source Sans Pro';
+}
+
+.container-medidas{
+  padding: 30px;
+  padding-bottom: 40px;
+  
 }
