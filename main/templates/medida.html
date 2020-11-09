@@ -11,7 +11,7 @@
 <section id="info">
   <div class="container">
     <div class="content-center">
-      <h1>Crea la casa de tus suños</h1>
+      <h1>Crea la casa de tus sueños</h1>
       <p>En este apartado pondras las condiciones para la realizacion de tu casa, decide cuantas piezas y baños deseas tener y te mostraremos el precio.</p>
     </div>
   </div>
@@ -21,33 +21,34 @@
   <div class="container-medidas" style="border: 1px; border-color: black;">
     <h4>Completar</h4>
     <hr>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Numero de habitaciones
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">1</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
+    <form method="GET">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="n_habitaciones">Número de habitaciones</label>
+        <select class="form-control" id="n_habitaciones" name="n_habitaciones">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
       </div>
-    </div>
-    <div class="dropdown" style="margin-top: 100px;">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:  212px;">
-        Numero de baños
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">1</a>
-        <a class="dropdown-item" href="#">2</a>
+      <div class="form-group">
+        <label for="n_baños">Número de baños</label>
+        <select class="form-control" id="n_baños" name="n_baños">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
       </div>
-    </div>
-    <div id="botoncito">
-      <button type="submit" class="btn btn-primary" style="margin-top: 100px;">Confirmar</button>
-    </div>
+      <div id="botoncito">
+        <button type="submit" class="btn btn-primary" style="margin-top: 100px;">Confirmar</button>
+      </div>
+    </form>
   </div>
   <div class="cuadradoMap">
     <h4>Resultado</h4>
     <hr>
+    {% if casa%}
+    {% if casa=="4-2" %}
     <div class="card" style="width: 18rem;">
       <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
       <div class="card-body">
@@ -60,6 +61,8 @@
         </ul>
       </div>
     </div>
+    {% endif %}
+    {% endif%}
   </div>
 </section>
 {% endblock content%}

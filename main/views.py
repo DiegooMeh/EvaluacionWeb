@@ -14,7 +14,15 @@ def contact(request):
     return render(request,'contact.html',{})
 
 def medida(request):
-    return render(request,'medida.html',{})
+    ctx = {}
+    if request.method == 'GET':
+        n_habitaciones = request.GET.get('n_habitaciones')
+        n_baños = request.GET.get('n_baños')
+        print('gabogei')
+        if n_habitaciones == 4 and n_baños == 2:
+            ctx['casa'] = "4-2"
+            print('a')
+    return render(request,'medida.html',ctx)
 
 def metraje(request):
     return render(request,'metraje.html',{})
