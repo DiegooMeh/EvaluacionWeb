@@ -12,7 +12,8 @@
   <div class="container">
     <div class="content-center">
       <h1>Crea la casa de tus sueños</h1>
-      <p>En este apartado pondras las condiciones para la realizacion de tu casa, decide cuantas piezas y baños deseas tener y te mostraremos el precio.</p>
+      <p>En este apartado pondras las condiciones para la realizacion de tu casa, decide cuantas piezas y baños deseas
+        tener y te mostraremos el precio.</p>
     </div>
   </div>
 </section>
@@ -22,7 +23,6 @@
     <h4>Completar</h4>
     <hr>
     <form method="GET">
-      {% csrf_token %}
       <div class="form-group">
         <label for="n_habitaciones">Número de habitaciones</label>
         <select class="form-control" id="n_habitaciones" name="n_habitaciones">
@@ -47,12 +47,12 @@
   <div class="cuadradoMap">
     <h4>Resultado</h4>
     <hr>
-    {% if casa%}
-    {% if casa=="4-2" %}
+    {% if casa == '4-2' %}
     <div class="card" style="width: 18rem;">
       <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
       <div class="card-body">
-        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
         <ul>
           <li>Precio: 13.848.89 UF </li>
           <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
@@ -61,8 +61,11 @@
         </ul>
       </div>
     </div>
+    {% elif casa == '1-1' %}
+
+    {% elif casa == '' %}
+
     {% endif %}
-    {% endif%}
   </div>
 </section>
 {% endblock content%}
