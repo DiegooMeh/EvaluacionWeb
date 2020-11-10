@@ -41,6 +41,11 @@ def metraje(request):
     ctx = {}
     ctx['metros'] = ''
     if request.method == 'GET':
-        metros_cuadrados = float(request.GET.get('metros_cuadrados'))
-        lbl_precio = (metros_cuadrados * 33000)/28883,18
+        metros_cuadrados = str(request.GET.get('metros_cuadrados'))
+        if metros_cuadrados != 'None':
+            lbl_precio = round((float(metros_cuadrados)*33000)/28883.18,2)
+        else:
+            metros_cuadrados = '0'
+            lbl_precio = '0'
+   
     return render(request,'metraje.html', {'metros_cuadrados': metros_cuadrados,'lbl_precio': lbl_precio })

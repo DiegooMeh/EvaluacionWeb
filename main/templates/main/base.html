@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block title%} Believe in our House {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{%static 'bootstrap-icons-1.1.0/house.svg'%}" />
     
 </head>
 <body>
@@ -25,13 +26,13 @@
               <a class="nav-link" href="home.html">Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">¿Quines somos?</a>
+              <a class="nav-link" href="about.html">¿Quienes somos?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html" >Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Galeria</a>
+              <a class="nav-link" href="gallery.html">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="medida.html" >Modelos a medida</a>
@@ -64,9 +65,9 @@
 
   <div class="footer-menu-one">
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Contactanos</a></li>
-      <li><a href="#">Galeria</a></li>
+      <li><a href="home.html">Inicio</a></li>
+      <li><a href="contact.html">Contactanos</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
     </ul>
   </div>
 </div>
