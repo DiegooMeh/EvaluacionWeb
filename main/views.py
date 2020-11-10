@@ -38,4 +38,9 @@ def medida(request):
     return render(request,'medida.html',ctx)
 
 def metraje(request):
-    return render(request,'metraje.html',{})
+    ctx = {}
+    ctx['metros'] = ''
+    if request.method == 'GET':
+        metros_cuadrados = float(request.GET.get('metros_cuadrados'))
+        lbl_precio = (metros_cuadrados * 33000)/28883,18
+    return render(request,'metraje.html', {'metros_cuadrados': metros_cuadrados,'lbl_precio': lbl_precio })

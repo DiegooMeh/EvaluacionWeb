@@ -25,7 +25,7 @@
     <form method="GET">
       <div>
         <label for="inputZip">Metros cuadrados deseados</label>
-        <input type="text" class="form-control" id="inputZip">
+        <input type="number" min="20" class="form-control" id="metros_cuadrados" name = "metros_cuadrados" type="hidden" value="{{from.metros_cuadrados.value}}">
       </div>
       <div id="botoncito">
         <button type="submit" class="btn btn-primary" style="margin-top: 100px;">Confirmar</button>
@@ -38,12 +38,9 @@
     <div class="card" style="width: 18rem;">
       <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
       <div class="card-body">
-        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una gran familia que quiera vivir en las afueras de las ciudades.</p>
-        <ul>
-          <li>Precio: 13.848.89 UF </li>
-          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
-          <li>Metros: 150<sup>2</sup></li>
-          <li>Estilo: Moderna </li>
+        <ul style="text-align: left;">
+          <li>Precio: <label for="lbl_precio" id="lbl_precio" name="lbl_precio">{{lbl_precio}}</label> </li>
+          <li>Metros: <label for="lbl_metros" id="lbl_metro" name="lbl_metro">{{ metros_cuadrados }}<sup>2</sup></label> </li>
         </ul>
       </div>
     </div>
