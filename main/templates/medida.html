@@ -1,7 +1,180 @@
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block content%}
-<div style="background-color: blue; height: 50px;">
-  <h1>MEDIDA</h1>
-</div>
+<section class="banner-medidas">
+  <div class="container">
+    <div class="content-center">
+      <h1 style="font-size: 50px;font-weight: bold; margin-top: 220px;">Modelos a medida</h1>
+    </div>
+  </div>
+</section>
+<section id="info">
+  <div class="container">
+    <div class="content-center">
+      <h1>Crea la casa de tus sueños</h1>
+      <p>En este apartado pondras las condiciones para la realizacion de tu casa, decide cuantas piezas y baños deseas
+        tener y te mostraremos el precio.</p>
+    </div>
+  </div>
+</section>
+
+<section id="Contacto" class="content-center">
+  <div class="container-medidas" style="border: 1px; border-color: black;">
+    <h4>Completar</h4>
+    <hr>
+    <form method="GET">
+      <div class="form-group">
+        <label for="n_habitaciones">Número de habitaciones</label>
+        <select class="form-control" id="n_habitaciones" name="n_habitaciones">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="n_baños">Número de baños</label>
+        <select class="form-control" id="n_baños" name="n_baños">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+      <div id="botoncito">
+        <button type="submit" class="btn btn-primary" style="margin-top: 100px;">Confirmar</button>
+      </div>
+    </form>
+  </div>
+  <div class="cuadradoMap">
+    <h4>Resultado</h4>
+    <hr>
+    {% if casa == '4-2' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '4-1' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '3-2' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '3-1' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '2-2' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '2-1' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '1-2' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '1-1' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+    {% elif casa == '' %}
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/casa2.jpg'%}" class="card-img-top" style="height: 178px;">
+      <div class="card-body">
+        <p style="font-size: medium;">¿Una parcela elgante? Si, hemos hecho esta casa especialmente pensada para una
+          gran familia que quiera vivir en las afueras de las ciudades.</p>
+        <ul>
+          <li>Precio: 13.848.89 UF </li>
+          <li>Materiales: Madera de roble, loza, ceramicas y cemento </li>
+          <li>Metros: 150<sup>2</sup></li>
+          <li>Estilo: Moderna </li>
+        </ul>
+      </div>
+    </div>
+
+    {% endif %}
+  </div>
+</section>
 {% endblock content%}
