@@ -166,9 +166,10 @@ ion-icon {
 #large{
   width: 200%;
 
-
+}
 /*ESTILOS CONTACTO */
-#BackgroundContacto{
+
+#BackgroundContacto {
     
 background-image: url('../img/');
 width: 100%;
