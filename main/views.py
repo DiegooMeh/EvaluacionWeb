@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Casa,Contacto
 
 # Create your views here.
 def main(request):
@@ -11,6 +12,17 @@ def about(request):
     return render(request,'about.html',{})
 
 def contact(request):
+    if request.method == 'POST':
+        nombre = request.POST['nombre']
+        email = request.POST['email']
+        apellidos = request.POST['apellidos']
+        telefono = request.POST['telefono']
+        Contacto.objects.create(
+            nombre = nombre,
+            correo = email,
+            apellido = apellidos,
+            numero = telefono
+        )
     return render(request,'contact.html',{})
 
 def medida(request):
@@ -19,22 +31,8 @@ def medida(request):
     if request.method == 'GET':
         n_habitaciones = request.GET.get('n_habitaciones')
         n_baños = request.GET.get('n_baños')
-        if n_habitaciones == '4' and n_baños == '2':
-            ctx['casa'] = '4-2'
-        elif n_habitaciones == '4' and n_baños == '1':
-            ctx['casa'] = '4-1'
-        elif n_habitaciones == '3' and n_baños == '2':
-            ctx['casa'] = '3-2'
-        elif n_habitaciones == '3' and n_baños == '1':
-            ctx['casa'] = '3-1'
-        elif n_habitaciones == '2' and n_baños == '2':
-            ctx['casa'] = '2-2'
-        elif n_habitaciones == '2' and n_baños == '1':
-            ctx['casa'] = '2-1'
-        elif n_habitaciones == '1' and n_baños == '2':
-            ctx['casa'] = '1-2'
-        elif n_habitaciones == '1' and n_baños == '1':
-            ctx['casa'] = '1-1'
+        if n_habitaciones and n_baños:
+            ctx['casa'] = Casa.objects.filter(habitaciones=int(n_habitaciones),baths=int(n_baños)).first()
     return render(request,'medida.html',ctx)
 
 def metraje(request):
@@ -49,3 +47,6 @@ def metraje(request):
             lbl_precio = '0'
    
     return render(request,'metraje.html', {'metros_cuadrados': metros_cuadrados,'lbl_precio': lbl_precio })
+
+def lista_contact(request):
+    return render(request,'lista_contact.html',{})
