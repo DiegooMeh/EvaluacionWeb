@@ -36,7 +36,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 #media_root
-media_root/
+#media_root/
 
 # Unit test / coverage reports
 htmlcov/
