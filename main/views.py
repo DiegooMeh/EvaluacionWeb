@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Casa,Contacto
 
 # Create your views here.
@@ -23,6 +23,7 @@ def contact(request):
             apellido = apellidos,
             numero = telefono
         )
+        return redirect('lista_contact')
     return render(request,'contact.html',{})
 
 def medida(request):
@@ -49,4 +50,11 @@ def metraje(request):
     return render(request,'metraje.html', {'metros_cuadrados': metros_cuadrados,'lbl_precio': lbl_precio })
 
 def lista_contact(request):
-    return render(request,'lista_contact.html',{})
+    ctx = {}
+    lista_contactos = Contacto.objects.all()
+    ctx['lista_contactos'] = lista_contactos
+    if request.method == 'POST':
+        id_contacto = request.POST['id_contacto']
+        Contacto.objects.get(id=id_contacto).delete()
+        return redirect('lista_contact')
+    return render(request,'lista_contact.html',ctx)

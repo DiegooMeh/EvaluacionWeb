@@ -28,12 +28,11 @@ p{
   width: 100%;
   font-family: 'Source Sans Pro';
 }
-#info{
-  padding: 100px;
-}
+
 .content-center{
-  max-width: 800p;
-  margin: 0 auto;
+  width: 80%;
+  margin: 6rem auto;
+  min-height: calc(100vh - 8.8rem - 400px);
   text-align: center;
 }
 .content-center-two{
@@ -42,10 +41,10 @@ p{
   text-align: center;
 }
 .footer-main-div{
+  height: 8.8rem;
   width: 100%;
-  height: auto;
   margin: auto;
-  bottom: 0;
+  margin-bottom: 0px;
   background: #272727;
   padding: 20px 0px;
 }
@@ -195,7 +194,6 @@ text-align: center;
 
 #Contacto{
 display: flex;
-width: 70%;
 justify-content: space-around;
 padding: 20px;
 
@@ -251,4 +249,13 @@ text-align: center;
 
 ul{
   text-align: left;
+}
+
+/** Listado de contactos **/
+
+.content {
+  width: 80%;
+  margin: 6rem auto;
+  margin-bottom: 8.8rem;
+  min-height: calc(100vh - 8.8rem);
 }
